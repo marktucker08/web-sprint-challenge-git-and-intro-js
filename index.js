@@ -248,12 +248,12 @@ Use copy to do the following:
 function listOfNames(arr) {
   const copyArr = arr.slice()
   for (let i = 0; i < copyArr.length; i++) {
-    copyArr[i] = copyArr[i].name
-  };
-  return copyArr
+    copyArr[i] = copyArr[i].name;
+  }
+  return copyArr;
 }
 
-console.log(listOfNames(artists))
+console.log(listOfNames(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -264,11 +264,13 @@ Use removeArtist to do the following:
 5. Return the resulting copied array
 🌟 EXAMPLE: if removeArtist is invoked with the artists array and the number 0, it will return the resulting array with Amedeo Modigliani removed from our dataset. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(arr, index) {
+  const newArr = arr.slice();
+  newArr.splice(index,1);
+  return newArr;
 }
 
-
+console.log(removeArtist(artists,4))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use addArtist to do the following: 
